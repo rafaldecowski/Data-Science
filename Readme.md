@@ -1,8 +1,8 @@
 # Data Science Portfolio - Rafal Decowski
 
 
-Predictive Analytics 
----
+# Predictive Analytics 
+
 - **[Moneyball](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Moneyball%20-%20Business%20Analytics%20and%20Data%20Mining%20with%20Multiple%20Linear%20Regression%20Modeling.pdf) - What are the most important game moves in baseball?**  
   Business Analytics and Data Mining with  Multiple Linear Regression Modeling
 
@@ -23,11 +23,10 @@ Predicting Accidents & Coverage Amounts
 
 
 # Statistics & Probability
----
 - **[Classification Models](http://rpubs.com/rafaldecowski/classification_models_performance) - How well is your model doing?**    
   Accuracy, sensitivity, precision, recall and other metrics.
   
-- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb) **  
+- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb)**  
   Dimensionality reduction using truncated singular value decomposition (SVD)
   
 - **[Traffic Accidents](http://rpubs.com/rafaldecowski/traffic_accidents_analysis) - Statistical Analysis**
@@ -38,7 +37,6 @@ Predicting Accidents & Coverage Amounts
 
 
 # Other
----
 - **[Monitoring Dashboard](https://lnkd.in/dkwixMf)** - Bloomberg and Thomson Reuters Stock Market Trading Platform
 - **[Data Breaches](http://54.89.237.229)** - Exploratory Analysis of Sensitive Information Breaches 
 
