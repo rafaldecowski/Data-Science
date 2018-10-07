@@ -26,7 +26,7 @@ Predicting Accidents & Coverage Amounts
 - **[News Sentiment Impact on Stock Prices](https://github.com/rafaldecowski/Data-Science/blob/master/Research/News%20Sentiment%20Impact%20on%20Stock%20Prices.ipynb)** - Portfolio Management through Text Mining
 - **[Monitoring Dashboard](https://lnkd.in/dkwixMf)** - Bloomberg and Thomson Reuters Stock Market Trading Platform
 - **[Data Breaches](http://54.89.237.229)** - Exploratory Analysis of Sensitive Information Breaches 
-- **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Article%20Recommender%20Engine.ipynb)** - Article Recommender Enginer
+- **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Article%20Recommender%20Engine.ipynb)** - Article Recommender Engine
 - **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Collaborative%20Filtering.ipynb)** - Collaborative Filtering 
 - **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Accuracy%20Metrics.ipynb)** - Accuracy Metrics
 - **[FIFA](https://github.com/rafaldecowski/Data-Science/blob/master/Research/FIFA%20-%20Soccer%20Players%20and%20Clubs.ipynb)** - Soccer Players and Club
