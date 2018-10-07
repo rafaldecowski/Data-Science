@@ -26,6 +26,9 @@ Predicting Accidents & Coverage Amounts
 - **[News Sentiment Impact on Stock Prices](https://github.com/rafaldecowski/Data-Science/blob/master/Research/News%20Sentiment%20Impact%20on%20Stock%20Prices.ipynb)** - Portfolio Management through Text Mining
 - **[Monitoring Dashboard](https://lnkd.in/dkwixMf)** - Bloomberg and Thomson Reuters Stock Market Trading Platform
 - **[Data Breaches](http://54.89.237.229)** - Exploratory Analysis of Sensitive Information Breaches 
+- **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Article%20Recommender%20Engine.ipynb)** - Article Recommender Enginer
+- **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Collaborative%20Filtering.ipynb)** - Collaborative Filtering 
+- **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Accuracy%20Metrics.ipynb)** - Accuracy Metrics
 - **[FIFA](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)** - Soccer Players and Club
 - **[Social Graph Analysis](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)** - Fictional Network of Harry Potter
 
