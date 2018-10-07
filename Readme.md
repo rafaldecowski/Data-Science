@@ -29,7 +29,7 @@ Predicting Accidents & Coverage Amounts
 - **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Article%20Recommender%20Engine.ipynb)** - Article Recommender Enginer
 - **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Collaborative%20Filtering.ipynb)** - Collaborative Filtering 
 - **[Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Recommender%20Systems%20-%20Accuracy%20Metrics.ipynb)** - Accuracy Metrics
-- **[FIFA](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)** - Soccer Players and Club
+- **[FIFA](https://github.com/rafaldecowski/Data-Science/blob/master/Research/FIFA%20-%20Soccer%20Players%20and%20Clubs.ipynb)** - Soccer Players and Club
 - **[Social Graph Analysis](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)** - Fictional Network of Harry Potter
 
 
