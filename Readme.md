@@ -23,17 +23,17 @@ Predicting Accidents & Coverage Amounts
 
 
 # Statistics & Probability
-- **[Classification Models](http://rpubs.com/rafaldecowski/classification_models_performance) - How well is your model doing?**    
-  Accuracy, sensitivity, precision, recall and other metrics.
+- **[Classification Models](http://rpubs.com/rafaldecowski/classification_models_performance) - Accuracy, sensitivity, precision, recall and other model performance metrics**    
+
   
-- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb)**  
-  Dimensionality reduction using truncated singular value decomposition (SVD)
+- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb) - Dimensionality reduction using truncated singular value decomposition (SVD)**  
+  
   
 - **[Traffic Accidents](http://rpubs.com/rafaldecowski/traffic_accidents_analysis) - Statistical Analysis**
 - **[Grading The Professor](http://rpubs.com/rafaldecowski/prof_grading_linear_modeling) - Multiple Linear Regression**
-- **[Statistical Inference - Categorical Data](http://rpubs.com/rafaldecowski/inference_categorical_data)**
-- **[Statistical Inference - Confidence Intervals](http://rpubs.com/rafaldecowski/inference_confidence_intervals)**
-- **[Statistical Inference - Sampling Distributions](http://rpubs.com/rafaldecowski/inference_sampling_distributions)**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_categorical_data) - Categorical Data**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_confidence_intervals) - Confidence Intervals**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions**
 
 
 # Other
