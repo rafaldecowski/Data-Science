@@ -22,25 +22,22 @@ Predicting Accidents & Coverage Amounts
   Career Insights and Resume - Job Title Predictions in Data Analytics
 
 
-# Statistics & Probability
-- **[Classification Models](http://rpubs.com/rafaldecowski/classification_models_performance) - Accuracy, sensitivity, precision, recall and other model performance metrics**    
-
-  
-- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb) - Dimensionality reduction using truncated singular value decomposition (SVD)**  
-  
-  
-- **[Traffic Accidents](http://rpubs.com/rafaldecowski/traffic_accidents_analysis) - Statistical Analysis**
-- **[Grading The Professor](http://rpubs.com/rafaldecowski/prof_grading_linear_modeling) - Multiple Linear Regression**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_categorical_data) - Categorical Data**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_confidence_intervals) - Confidence Intervals**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions**
-
-
-# Research
+# Research & App Development
 - **[News Sentiment Impact on Stock Prices](https://github.com/rafaldecowski/Data-Science/blob/master/Research/News%20Sentiment%20Impact%20on%20Stock%20Prices.ipynb)**
 - **[Monitoring Dashboard](https://lnkd.in/dkwixMf)** - Bloomberg and Thomson Reuters Stock Market Trading Platform
 - **[Data Breaches](http://54.89.237.229)** - Exploratory Analysis of Sensitive Information Breaches 
 - **[Social Graph Analysis - Fictional Network of Harry Potter](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)**
 - **[FIFA - Soccer Players and Club](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)**
+
+
+
+# Statistics & Probability
+- **[Classification Models](http://rpubs.com/rafaldecowski/classification_models_performance) - Accuracy, sensitivity, precision, recall and other model performance metrics**      
+- **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb) - Dimensionality reduction using truncated singular value decomposition (SVD)**  
+- **[Traffic Accidents](http://rpubs.com/rafaldecowski/traffic_accidents_analysis) - Statistical Analysis**
+- **[Grading The Professor](http://rpubs.com/rafaldecowski/prof_grading_linear_modeling) - Multiple Linear Regression**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_categorical_data) - Categorical Data**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_confidence_intervals) - Confidence Intervals**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions**
 
 
