@@ -36,8 +36,11 @@ Predicting Accidents & Coverage Amounts
 - **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions**
 
 
-# Other
+# Research
+- **[News Sentiment Impact on Stock Prices](https://github.com/rafaldecowski/Data-Science/blob/master/Research/News%20Sentiment%20Impact%20on%20Stock%20Prices.ipynb)**
 - **[Monitoring Dashboard](https://lnkd.in/dkwixMf)** - Bloomberg and Thomson Reuters Stock Market Trading Platform
 - **[Data Breaches](http://54.89.237.229)** - Exploratory Analysis of Sensitive Information Breaches 
+- **[Social Graph Analysis - Fictional Network of Harry Potter](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)**
+- **[FIFA - Soccer Players and Club](https://github.com/rafaldecowski/Data-Science/blob/master/Research/Social%20Graph%20Analysis%20-%20Fictional%20Network%20of%20Harry%20Potter.ipynb)**
 
 
