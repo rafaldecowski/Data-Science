@@ -1,0 +1,52 @@
+.navbar{
+    margin-top:5px;
+    box-shadow: 0px 3px 5px  black;
+    font-family: quarca;
+}
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 11%;  /* for equally sized navigation buttons. Adjust if more links */
+}
+
+.navbar .nav li a {
+    text-align: center;
+    max-height: 50px;
+    transition: 0.5s;
+}
+
+.navbar .nav li a:hover {
+    background-color: transparent;
+  background-image: -webkit-linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: inset black 0px 0px 15px, inset black 0px 1px 0px, inset black 0px -1px 0px; }
+
+
+ .navbar-default .navbar-nav > .active > a{
+    background-color: transparent;
+  background-image: -webkit-linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: linear-gradient(bottom, rgba(20, 20, 20, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: inset black 0px 0px 15px, inset black 0px 1px 0px, inset black 0px -1px 0px; }
+
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+.navbar-collapse.collapse {
+  display: block!important;
+}

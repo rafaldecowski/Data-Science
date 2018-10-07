@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %} Trader {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <!-- Portfolio from pandas dataframe into html table -->
+    <div class="row">
+        {{ portfolio | safe }}
+    </div>
+</div>
+
+{% endblock %}

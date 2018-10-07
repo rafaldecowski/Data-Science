@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/theme-slate.css">
+    <link rel="stylesheet" href="../static/css/slate.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    {% endblock %}
+</head>
+
+
+
+<style>
+body {
+
+    font-size: 16px;
+    background-color: #3a3f44;
+    border-color: #2b2e32;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>
+
+<body>
+
+<!-- Navigation Bar Start -->
+<div class="navbar navbar-default nav-justified">
+    <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+
+            <li role="presentation" >
+                <a href="#"><span id="cash">Cash: {{ cash }}</span></a>
+            </li>
+            <li role="presentation">
+                <a href="/">TRADE</a>
+            </li>
+            <li role="presentation">
+                <a href="/history">HISTORY</a>
+            </li>
+            <li role="presentation">
+                <a href="/portfolio">PORTFOLIO</a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<!-- Navigation Bar End -->
+
+
+<!-- Content Start -->
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<!-- Content End -->
+
+
+
+
+<!-- Footer -->
+<div id="footer">
+{% block footer %}
+{% endblock %}
+</div>
+
+
+</body>
+</html>
+
+

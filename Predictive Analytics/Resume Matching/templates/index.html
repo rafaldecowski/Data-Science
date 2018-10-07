@@ -1,0 +1,308 @@
+{% extends "layout.html" %}
+{% block title %} Trader {% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+
+
+
+
+<!-- Buy & Sell Panel -->
+<div class="row">
+
+    <div class="col-md-4 panel" style="height:170px">
+
+            <select class="form-control symbol-list" name="option" style="margin-top: 10px;">
+                {% for x in equities %}
+                    <option value="{{ x['Symbol'] }}"{% if loop.first %} SELECTED {% endif %}>
+                        {{ x['Symbol'] }} - {{ x['Name'] }}
+                    </option>
+
+                {% endfor %}
+            </select>
+
+            <input type="number" class="form-control" id="quantity" placeholder="Quantity">
+
+            <button onclick="trade_execute('buy')" style="width:45%;" class="btn btn-default">BUY</button>
+            <button onclick="trade_execute('sell')" style="width:45%; float:right" class="btn btn-default">SELL</button>
+
+        </ul>
+    </div>
+
+
+    <div class="col-md-4 panel"  style="height:170px">
+        <ul class="list-group">
+            <li class="list-group-item">Last Price: <span id="last_price"></span></li>
+            <li class="list-group-item">% Change: <span id="percent_net_change"></span></li>
+            <li class="list-group-item">Daily Mean (100 days): <span id="daily_mean"></span></li>
+            <li class="list-group-item">Daily SD (100 days): <span id="daily_sd"></span></li>
+        </ul>
+    </div>
+
+
+    <div class="col-md-4 panel"  style="height:170px">
+        <ul class="list-group">
+            <li class="list-group-item">Today's Low:        <span id="todays_low"></span></li>
+            <li class="list-group-item">Today's High:        <span id="todays_high"></span></li>
+            <li class="list-group-item">Year's Low:       <span id="year_low"></span></li>
+            <li class="list-group-item">Year's High:        <span id="year_high"></span></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!-- Chart Row START -->
+<!-- Symbol Selection Event Result - 100 latest trades  -->
+
+<div class="row">
+    <div class="col-md-6 panel" style="height:400px" id='last_trades'></div>
+    <div class="col-md-6 panel" style="height:400px" id='hist_trades'></div>
+</div>
+<!-- Chart Row END -->
+
+
+</div>
+
+
+
+
+<!-- Symbol Selection Event START -->
+<script type=text/javascript>
+    var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+
+
+
+
+<!-- There are 3 actions performed when a user selects a company
+1. Get summary - and populate the summary div
+2. Get 100 last trades and generate a plotly chart
+3. Get historical data and populate a plotly chart
+-->
+<script>
+
+$('.symbol-list').change(function(){
+
+    // Add spinners while collecitng data
+    $("#last_trades").html('<div class="loader" style="display:block; margin-top: 130px">')
+    $("#hist_trades").html('<div class="loader" style="display:block; margin-top: 130px">')
+
+    var selected_symbol = $('.symbol-list').val();
+
+    $.ajax({
+        type: "GET",
+        url: $SCRIPT_ROOT + "/selected_symbol/",
+        data: { symbol: selected_symbol },
+        success: function(full_data) {
+
+
+            console.log(full_data);
+            // Remove loder spinners
+            $("#last_trades").html('')
+            $("#hist_trades").html('')
+
+            // Summary statistics START
+            var summary = JSON.parse(full_data['summary']);
+            summary.forEach(function(d) {
+                $("#last_price").text(d['last_price']);
+                $("#net_change").text(d['net_change']);
+                $("#percent_net_change").text(d['percent_net_change']);
+                $("#todays_low").text(d['todays_low']);
+                $("#todays_high").text(d['todays_high']);
+                $("#year_low").text(d['year_low']);
+                $("#year_high").text(d['year_high']);
+            });
+            // Summary statistics END
+
+            // Other Stats START
+            var other = full_data['other_stats'];
+            $("#daily_sd").text(other['daily_sd']);
+            $("#daily_mean").text(other['daily_mean']);
+            // Other Stats END
+
+
+            // Last hundred trades START
+            // On symbol selection  get 100 last trades, then create time and price arrays for charting
+            var hundred = JSON.parse(full_data['hundred_trades']);
+            var timeline = [];
+            var prices = [];
+
+            hundred.forEach(function(d) {
+                // Convert the time value in ms to graph-ready date objects
+                var ptime = new Date(d.time);
+                // Arrays used to generate x and y of the chart
+                timeline.push(ptime);
+                prices.push(d.price);
+            });
+
+
+
+            // Plotly chart START
+            var plot_data = [{
+                    x: timeline,
+                    y: prices,
+                    type: 'scatter'
+            }];
+
+            var plot_layout = {
+                font: {color: '#fff'},
+                title: prices.length + ' Last Trades - ' + selected_symbol,
+                xaxis: {
+                    title: 'Time(GMT)'
+                },
+                yaxis: {
+                    title: 'Price'
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)'
+            };
+
+            Plotly.newPlot('last_trades', plot_data, plot_layout, {displayModeBar: false});
+            // Plotly chart END
+            // Last hundred trades END
+
+
+
+
+
+            // HISTORICAL START
+            // On symbol selection  get 100 last trades, then create time and price arrays for charting
+            var hist = JSON.parse(full_data['hist']);
+
+            var hist_timeline = [];
+            var hist_open = [];
+            var hist_high = [];
+            var hist_low = [];
+            var hist_close = [];
+            var hist_adj_close = [];
+
+            hist.forEach(function(d) {
+                // Convert the time value in ms to graph-ready date objects
+                // X axis - timeline
+                var ptime = new Date(d['Date'])
+                hist_timeline.push(ptime);
+
+                // Arrays used to generate y's of the chart
+                hist_open.push(d['Open']);
+                hist_high.push(d['High']);
+                hist_low.push(d['Low']);
+                hist_close.push(d['Close']);
+                hist_adj_close.push(d['Adj Close']);
+            });
+
+            // Plotly chart START
+            var hist_open_axis = {
+                    x: hist_timeline,
+                    y: hist_open,
+                    name: 'Open',
+                    type: 'scatter'
+            };
+
+            var hist_high_axis = {
+                    x: hist_timeline,
+                    y: hist_high,
+                    name: 'High',
+                    type: 'scatter'
+            };
+
+            var hist_low_axis = {
+                    x: hist_timeline,
+                    y: hist_low,
+                    name: 'Low',
+                    type: 'scatter'
+            };
+
+            var hist_close_axis = {
+                x: hist_timeline,
+                y: hist_close,
+                name: 'Close',
+                type: 'scatter'
+            };
+
+            var hist_adj_close_axis = {
+                x: hist_timeline,
+                y: hist_adj_close,
+                name: 'Adj Close',
+                type: 'scatter'
+            };
+
+            var all_hist_plot_data = [hist_open_axis, hist_high_axis, hist_low_axis, hist_close_axis, hist_adj_close_axis];
+
+            var hist_plot_layout = {
+                font: {color: '#fff'},
+                title: '100 Days - ' + selected_symbol,
+                xaxis: {
+                    title: 'Time(GMT)'
+                },
+                yaxis: {
+                    title: 'Price'
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)'
+            };
+
+
+            Plotly.newPlot('hist_trades', all_hist_plot_data, hist_plot_layout, {displayModeBar: false});
+            // Plotly chart END
+            // HISTORICAL END
+
+
+
+
+
+
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert("Unable to retrieve last 100 trades for this symbol.");
+        }
+    });
+});
+</script>
+
+
+
+
+
+ <script>
+
+function trade_execute(action) {
+    if (!confirm('Are you sure to want to execute this trade?'))
+        return;
+
+
+    var selected_symbol = $('.symbol-list').val();
+    var quantity = $('#quantity').val();
+
+    if (action == 'buy'){
+        $.ajax({
+            type: "GET",
+            url: $SCRIPT_ROOT + "/buy/",
+            data: {symbol: selected_symbol, quantity: quantity},
+            success: function (message) {
+                alert(message);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                alert("Unable to execute this trade.")
+            }
+        });
+    }else {
+        $.ajax({
+            type: "GET",
+            url: $SCRIPT_ROOT + "/sell/",
+            data: {symbol: selected_symbol, quantity: quantity},
+            success: function (message) {
+                alert(message);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                alert("Unable to execute this trade.")
+            }
+        });
+    }
+}
+ </script>
+
+{% endblock %}
+
