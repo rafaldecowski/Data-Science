@@ -2,24 +2,24 @@
 
 
 # Predictive Analytics 
-
-- **[Moneyball](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Moneyball%20-%20Business%20Analytics%20and%20Data%20Mining%20with%20Multiple%20Linear%20Regression%20Modeling.pdf) - What are the most important game moves in baseball?**  
-  Business Analytics and Data Mining with  Multiple Linear Regression Modeling
-
-- **[Criminology](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Criminology%20-%20Crime%20Rate%20Prediction%20with%20Binary%20Logistic%20Regression%20Modeling.pdf) - What are the most dangerous geographical areas?**  
-Crime Rate Prediction with Binary Logistic Regression Modeling
-
+	
+- **[Demand Indicators](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Wine%20Demand%20-%20Prediction%20with%20Regression%20Models.pdf) - What are the key factors that indicate wine demand and sellability?**  
+  Wine Demand and KPI Prediction with Regression Modeling
+  
 - **[Auto Insurance](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Auto%20Insurance%20-%20Predicting%20Accidents%20%26%20Coverage%20Amounts.pdf) - What are the chances our potential client gets into a car crash and how expensive could it be?**  
 Predicting Accidents & Coverage Amounts
 
 - **[Real Estate](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Real%20Estate%20-%20House%20Price%20Predictions%20with%20Regression%20Models.pdf) - How much will cost your dream house?**  
 	House Price predictions with Regression Modeling
-	
-- **[Demand Indicators](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Wine%20Demand%20-%20Prediction%20with%20Regression%20Models.pdf) - What are the key factors that indicate wine demand and sellability?**  
-  Wine Demand and KPI Prediction with Regression Modeling
-  
+
 - **[Resume Matching](https://github.com/rafaldecowski/Data-Science/tree/master/Predictive%20Analytics/Resume%20Matching) - How our Curriculum Vitae Aligns with Job Postings?**  
   Career Insights and Resume - Job Title Predictions in Data Analytics
+
+- **[Criminology](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Criminology%20-%20Crime%20Rate%20Prediction%20with%20Binary%20Logistic%20Regression%20Modeling.pdf) - What are the most dangerous geographical areas?**  
+	Crime Rate Prediction with Binary Logistic Regression Modeling
+
+- **[Moneyball](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Moneyball%20-%20Business%20Analytics%20and%20Data%20Mining%20with%20Multiple%20Linear%20Regression%20Modeling.pdf) - What are the most important game moves in baseball?**  
+  Business Analytics and Data Mining with  Multiple Linear Regression Modeling
 
 
 # Research & App Development
