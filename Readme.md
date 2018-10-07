@@ -18,7 +18,7 @@ Predicting Accidents & Coverage Amounts
 - **[Demand Indicators](https://github.com/rafaldecowski/Data-Science/blob/master/Predictive%20Analytics/Wine%20Demand%20-%20Prediction%20with%20Regression%20Models.pdf) - What are the key factors that indicate wine demand and sellability?**  
   Wine Demand and KPI Prediction with Regression Modeling
   
-- **Resume Matching - How our Curriculum Vitae Aligns with Job Postings?**  
+- **[Resume Matching](https://github.com/rafaldecowski/Data-Science/tree/master/Predictive%20Analytics/Resume%20Matching) - How our Curriculum Vitae Aligns with Job Postings?**  
   Career Insights and Resume - Job Title Predictions in Data Analytics
 
 
