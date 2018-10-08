@@ -38,8 +38,8 @@ Predicting Accidents & Coverage Amounts
 - **[Matrix Factorization in Recommender Systems](https://github.com/rafaldecowski/Data-Science/blob/master/Statistics/Matrix%20Factorization%20in%20Recommender%20Systems.ipynb) - Dimensionality reduction using truncated singular value decomposition (SVD)**  
 - **[Traffic Accidents](http://rpubs.com/rafaldecowski/traffic_accidents_analysis) - Statistical Analysis**
 - **[Grading The Professor](http://rpubs.com/rafaldecowski/prof_grading_linear_modeling) - Multiple Linear Regression**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_categorical_data) - Categorical Data**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_confidence_intervals) - Confidence Intervals**
-- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_categorical_data) - Categorical Data (CUNY Lab)**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_confidence_intervals) - Confidence Intervals (CUNY Lab)**
+- **[Statistical Inference](http://rpubs.com/rafaldecowski/inference_sampling_distributions) - Sampling Distributions (CUNY Lab)**
 
 
